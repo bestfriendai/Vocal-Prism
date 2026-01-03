@@ -3,8 +3,8 @@
 A stunning, modern macOS application for transcribing audio files using OpenAI's Whisper model with CoreML acceleration. Features a beautiful liquid-glass UI design with real-time transcription streaming.
 
 ![macOS](https://img.shields.io/badge/macOS-26.0+-blue)
-![Swift](https://img.shields.io/badge/Swift-5.9-orange)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-4.0-green)
+![Swift](https://img.shields.io/badge/Swift-6.2-orange)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-5.0-green)
 
 ## ✨ Features
 
