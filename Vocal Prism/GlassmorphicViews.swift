@@ -265,7 +265,14 @@ struct DropZoneView: View {
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = false
         panel.canChooseFiles = true
-        panel.allowedContentTypes = [.mp3, .wav, .m4a, .flac, .audio]
+        
+        // Define supported audio types
+        let audioTypes: [UTType] = [.mp3, .wav, .mpeg4Audio, .audio]
+        if let flacType = UTType(filenameExtension: "flac") {
+            panel.allowedContentTypes = audioTypes + [flacType]
+        } else {
+            panel.allowedContentTypes = audioTypes
+        }
         
         if panel.runModal() == .OK, let url = panel.url {
             onSelect(url)

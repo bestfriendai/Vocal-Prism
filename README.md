@@ -366,3 +366,17 @@ For issues or questions:
 **Built with ❤️ using SwiftUI and Whisper**
 
 Enjoy transcribing with style! 🎙️✨
+
+## API Configuration
+
+### Required API Keys
+This app uses local Whisper models - no API keys required. The app processes audio entirely on-device using:
+- whisper-cli executable (included in Resources)
+- Whisper model files (ggml-base.en.bin, etc.)
+
+### Type Checking
+Xcode automatically type-checks Swift code.
+
+### Building for Production
+Open the project in Xcode and build for release:
+- Product → Archive → Distribute
